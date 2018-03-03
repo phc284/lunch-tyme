@@ -115,3 +115,26 @@ body {
 		grid-template-columns: 1fr 1fr;
 	}
 }
+
+@media(min-width: 1024px) {
+
+	.App {
+		display: grid;
+		grid-template-areas: "header"
+		"list"
+	}
+
+	.storelist-view {
+		margin: 0;
+	}
+
+	.footer {
+		visibility: hidden;
+	}
+
+	.header img {
+		width: 30px;
+		margin: 0 15px 20px auto;
+	}
+
+}

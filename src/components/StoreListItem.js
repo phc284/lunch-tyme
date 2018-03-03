@@ -3,7 +3,7 @@ import React from 'react';
 import BG_Gradient from '../Cuts/cellGradientBackground@2x.png';
 
 const StoreListItem = ({ store }) => {
-    const {backgroundImageURL, name, category} = store;
+    const {backgroundImageURL, name, category, contact, location} = store;
 
     return (
       <div className="storelist-item">
