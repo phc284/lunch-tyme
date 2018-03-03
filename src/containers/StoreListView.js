@@ -22,7 +22,7 @@ class StoreListView extends Component {
   render() {
   	console.log(this.props)
     return (
-      <div className="StoreListView">
+      <div className="storelist-view">
         {this.renderList()}
       </div>
     );

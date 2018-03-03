@@ -42,24 +42,42 @@ body {
 
 /* Store List */
 
+.storelist-view {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-bottom: 50px;
+}
+
 .storelist-item {
 	color: #FFFFFF;
-	position: relative;
 	font-family: 'Avenir Next Demi Bold';
-	text-align: center;
-	width: 100%;
 	margin: 0;
 	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+.image-container {
+	position: relative;
+	height: 180px;
+}
+
+.gradient {
+	position: absolute;
+	left: 0;
+	height: 180px;
 }
 
 .storelist-item img{
-	height: auto;
+	height: 100%;
 	width: 100%;
 }
 
 .store-labels {
 	position: absolute;
-	bottom: 18px;
+	bottom: 0px;
+	margin-left: 12px;
+	margin-bottom: 6px;
 }
 
 
@@ -90,4 +108,10 @@ body {
 .footer-tab img {
 	width: 25px;
 	margin: 4px auto 2px auto;
+}
+
+@media(min-width: 801px) {
+	.storelist-view {
+		grid-template-columns: 1fr 1fr;
+	}
 }

@@ -1,12 +1,17 @@
 import React from 'react';
 
+import BG_Gradient from '../Cuts/cellGradientBackground@2x.png';
+
 const StoreListItem = ({ store }) => {
     const {backgroundImageURL, name, category} = store;
-    console.log(backgroundImageURL)
+
     return (
       <div className="storelist-item">
-      	<img src={backgroundImageURL} alt="" />
-      	<div clasName="store-labels">
+      	<div className="image-container">
+      		<img className="store-img" src={backgroundImageURL} alt="" />
+      		<img className="gradient" src={BG_Gradient} alt="" />
+      	</div>
+      	<div className="store-labels">
 	      	<div className="store-name">{name}</div>
 	      	<div className="store-category">{category}</div>
 	      </div>
