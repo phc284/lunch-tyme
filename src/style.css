@@ -1,0 +1,93 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.App {
+	display: grid;
+	grid-template-areas: "header"
+	"list"
+	"footer"
+}
+
+/* Header */
+.header {
+	align-items: end;
+	background-color: #43E895;
+	display: grid;
+	grid-area: header;
+	grid-column-gap: 5px;
+	grid-template-columns: 1fr auto 1fr;
+	height: 100px;
+	justify-items: center;
+	text-align: center;
+	width: 100%;
+}
+
+.header span {
+	color: white;
+	font-family: 'Avenir Next Demi Bold';
+	font-size: 17px;
+	grid-column: 2;
+}
+
+.header img {
+	width: 30px;
+	margin: 0 8px 0 auto;
+}
+
+.header span, .header img {
+	margin-bottom: 20px;
+}
+
+/* Store List */
+
+.storelist-item {
+	color: #FFFFFF;
+	position: relative;
+	font-family: 'Avenir Next Demi Bold';
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.storelist-item img{
+	height: auto;
+	width: 100%;
+}
+
+.store-labels {
+	position: absolute;
+	bottom: 18px;
+}
+
+
+
+/* Footer */
+
+.footer {
+	align-items: center;
+	background-color: #2A2A2A;
+	bottom: 0;
+	display: flex;
+	grid-area: footer;
+	grid-template-columns: 1fr 1fr;
+	height: 50px;
+	justify-content: space-around;
+	position: fixed;
+	width: 100%;
+}
+
+.footer-tab {
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Avenir Next';
+	font-size: 10px;
+}
+
+.footer-tab img {
+	width: 25px;
+	margin: 4px auto 2px auto;
+}
