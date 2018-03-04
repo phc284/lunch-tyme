@@ -41,7 +41,7 @@ class Details extends Component {
 						<br />
 						<div className="phone-number">{phoneNumber}</div>
 						<br />
-						<div className="twitter">{twitter === '' ? '' : '@'+twitter}</div>
+						<div className="twitter">{twitter === '' || twitter === undefined ? '' : '@'+twitter}</div>
 					</div>
 				</div>
 				)

@@ -204,19 +204,28 @@ br {
 	.storelist-view {
 		grid-template-columns: 1fr 1fr;
 	}
+
 }
 
 @media(min-width: 1024px) {
-
+	body {
+		background-color: gray;
+	}
 	.App {
 		display: grid;
 		grid-template-areas: "header"
-		"list"
+		"list";
+		margin:0px 15%;
 	}
 
 	.storelist-view {
 		margin: 0;
 	}
+
+	.details {
+		width: 70vw;
+		left: 15%;
+ 	}
 
 	.footer {
 		visibility: hidden;
