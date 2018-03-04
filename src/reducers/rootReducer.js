@@ -1,10 +1,11 @@
 import { combineReducers } from 'redux';
 
-import StoreReducer from './stores_reducer';
-
+import StoresReducer from './stores_reducer';
+import DetailsReducer from './details_reducer';
 
 const rootReducer = combineReducers({
-	stores: StoreReducer
+	stores: StoresReducer,
+	details: DetailsReducer
 });
 
 export default rootReducer;
