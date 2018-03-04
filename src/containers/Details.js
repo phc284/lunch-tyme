@@ -12,8 +12,7 @@ class Details extends Component {
 		if (this.props.visible === true) {
 			visible = "details show"
 		}
-		console.log(this.props)
-		// console.log(this.props)
+
 		if(this.props.details.name) {
 			const { name, category } = this.props.details;
 			let phoneNumber, twitter = '';
