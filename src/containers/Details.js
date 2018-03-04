@@ -18,7 +18,11 @@ class Details extends Component {
 		// console.log(this.props)
 		if(this.props.details.name) {
 			const { name, category } = this.props.details;
-			const { formattedPhone, twitter } = this.props.details.contact;
+			let phoneNumber, twitter = '';
+			if (this.props.details.contact) {
+				phoneNumber = this.props.details.contact.formattedPhone;
+				twitter = this.props.details.contact.twitter;			
+			}
 			const { address, city, postalCode, lat, lng, state } = this.props.details.location;
 			return (
 				<div className={visible}>
@@ -35,7 +39,7 @@ class Details extends Component {
 					</div>
 					<div className="detail-info">
 						<div className="address">{address}</div>
-						<div className="phone-number">{formattedPhone}</div>
+						<div className="phone-number">{phoneNumber}</div>
 						<div className="twitter">{twitter}</div>
 					</div>
 				</div>
