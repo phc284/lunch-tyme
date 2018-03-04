@@ -133,7 +133,7 @@ body {
   left: 0;
   bottom: 0;
   transition: transform .7s ease-in;
-  z-index: 2;
+  z-index: 5;
   -webkit-transition: transform .7s ease-in;
   -moz-transition: transform .7s ease-in;
   -o-transition: transform .7s ease-in;
@@ -154,20 +154,38 @@ body {
 }
 
 .detail-title{
+	background-color: #34B379;
+	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	background-color: #34B379;
+	font-family: 'Avenir Next';
 	height: 60px;
+	justify-content: center;
 	padding-left: 5%;
+	z-index: 3;
+}
+
+.detail-title div:nth-child(1){
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.detail-title div:nth-child(2){
+	font-size: 12px;
 }
 
 .detail-info {
 	display: flex;
 	height: 300px;
 	flex-direction: column;
-	justify-content: center;
+	font-family: 'Avenir Next';
+	margin-top: 16px;
 	padding-left: 5%;
+	z-index: 3;
+}
+
+br {
+	margin-bottom: 26px;
 }
 
 

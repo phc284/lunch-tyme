@@ -2,19 +2,17 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 
-import { closeDetails } from '../actions'
-
 import Header from './Header';
 import Map from '../components/Map'
 
 
 class Details extends Component {
 	render(){
-		console.log('Details', this.props)
 		let visible = "details hide";
 		if (this.props.visible === true) {
 			visible = "details show"
 		}
+		console.log(this.props)
 		// console.log(this.props)
 		if(this.props.details.name) {
 			const { name, category } = this.props.details;
@@ -23,7 +21,7 @@ class Details extends Component {
 				phoneNumber = this.props.details.contact.formattedPhone;
 				twitter = this.props.details.contact.twitter;			
 			}
-			const { address, city, postalCode, lat, lng, state } = this.props.details.location;
+			const { lat, lng, formattedAddress } = this.props.details.location;
 			return (
 				<div className={visible}>
 					<Header details={this.props.visible}/>
@@ -38,9 +36,12 @@ class Details extends Component {
 						<div>{category}</div>
 					</div>
 					<div className="detail-info">
-						<div className="address">{address}</div>
+						<div className="address">{formattedAddress[0]}</div>
+						<div className="address">{`${formattedAddress[1]}`}</div>
+						<br />
 						<div className="phone-number">{phoneNumber}</div>
-						<div className="twitter">{twitter}</div>
+						<br />
+						<div className="twitter">{twitter === '' ? '' : '@'+twitter}</div>
 					</div>
 				</div>
 				)

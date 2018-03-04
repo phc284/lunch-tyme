@@ -5,7 +5,6 @@ const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
  
 export class MapContainer extends Component {
 	render() {
-		console.log(this.props)
 		const style = {
 			width: '100%',
 			height: '180px'
@@ -25,7 +24,6 @@ export class MapContainer extends Component {
           name={'Current location'} 
           position={{lat: this.props.lat, lng: this.props.lng}}
         />
- 
         <InfoWindow onClose={this.onInfoWindowClose}>
             <div>
               <h1>Hello</h1>
