@@ -19,8 +19,8 @@ class StoreListItem extends Component {
 	      		<img className="gradient" src={BG_Gradient} alt="" />
 	      	</div>
 	      	<div className="store-labels">
-		      	<div className="store-name">{name}</div>
-		      	<div className="store-category">{category}</div>
+		      	<div>{name}</div>
+		      	<div>{category}</div>
 		      </div>
 	      </div>
 	    );

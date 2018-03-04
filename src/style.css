@@ -26,7 +26,8 @@ body {
 
 .header span {
 	color: white;
-	font-family: 'Avenir Next Demi Bold';
+	font-family: "Avenir Next";
+	font-weight: 500;
 	font-size: 17px;
 	grid-column: 2;
 }
@@ -50,7 +51,7 @@ body {
 
 .storelist-item {
 	color: #FFFFFF;
-	font-family: 'Avenir Next Demi Bold';
+	font-family: "Avenir Next";
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -68,6 +69,7 @@ body {
 	height: 180px;
 }
 
+
 .storelist-item img{
 	height: 100%;
 	width: 100%;
@@ -80,6 +82,14 @@ body {
 	margin-bottom: 6px;
 }
 
+.store-labels div:nth-child(1){
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.store-labels div:nth-child(2){
+	font-size: 12px;
+}
 
 
 /* Footer */
@@ -102,7 +112,7 @@ body {
 	color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
-	font-family: 'Avenir Next';
+	font-family: "Avenir Next";
 	font-size: 10px;
 }
 

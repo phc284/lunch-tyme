@@ -14,7 +14,7 @@ class StoreListView extends Component {
 	}
 	
 	renderList() {
-		if (this.props.stores.restaurants) {
+		if(this.props.stores.restaurants) {
 			return this.props.stores.restaurants.map((store, i) => {
 				return (<StoreListItem shop={store} key={i} />)
 			})
@@ -30,7 +30,7 @@ class StoreListView extends Component {
   }
 }
 
-function mapStateToProps({stores}) {
+function mapStateToProps({ stores }) {
 	return stores
 }
 
