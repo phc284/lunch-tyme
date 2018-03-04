@@ -5,7 +5,8 @@ import { bindActionCreators } from 'redux';
 
 import { closeDetails } from '../actions'
 
-import Header from './Header'
+import Header from './Header';
+import Map from '../components/Map'
 
 
 class Details extends Component {
@@ -14,7 +15,7 @@ class Details extends Component {
 		if (this.props.visible === true) {
 			visible = "details show"
 		}
-		console.log(this.props)
+		// console.log(this.props)
 		if(this.props.details.name) {
 			const { name, category } = this.props.details;
 			const { formattedPhone, twitter } = this.props.details.contact;
@@ -22,7 +23,12 @@ class Details extends Component {
 			return (
 				<div className={visible}>
 					<Header details={this.props.visible} />
-					<div className="gmap"></div>
+					<div className="gmap">
+						<Map 
+							lat={lat}
+							lng={lng}
+						/>
+					</div>
 					<div className="detail-title">
 						<div>{name}</div>
 						<div>{category}</div>
