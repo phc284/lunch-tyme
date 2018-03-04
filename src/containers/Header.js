@@ -10,7 +10,7 @@ import { closeDetails } from '../actions'
 class Header extends Component {
 
 	render(){
-		if(this.props.details === true) {
+		if(this.props.details) {
 	    return (
 	      <div className="header">
 	      	<img className="back" src={BackIcon} alt="" onClick={() => {this.props.closeDetails()}}/>
@@ -21,7 +21,6 @@ class Header extends Component {
 		} else {
 			return (
 	      <div className="header">
-	      	<div></div>
 	      	<span>Lunch Tyme</span>
 	      	<img className="map" src={MapIcon} alt=""/>
 	      </div>

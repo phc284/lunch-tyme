@@ -10,6 +10,7 @@ import Map from '../components/Map'
 
 class Details extends Component {
 	render(){
+		console.log('Details', this.props)
 		let visible = "details hide";
 		if (this.props.visible === true) {
 			visible = "details show"
@@ -25,7 +26,7 @@ class Details extends Component {
 			const { address, city, postalCode, lat, lng, state } = this.props.details.location;
 			return (
 				<div className={visible}>
-					<Header details={this.props.visible} />
+					<Header details={this.props.visible}/>
 					<div className="gmap">
 						<Map 
 							lat={lat}
