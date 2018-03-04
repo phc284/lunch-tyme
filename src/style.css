@@ -12,7 +12,7 @@ body {
 
 /* Header */
 .header {
-	align-items: end;
+	align-items: center;
 	background-color: #43E895;
 	display: grid;
 	grid-area: header;
@@ -32,14 +32,17 @@ body {
 	grid-column: 2;
 }
 
-.header img {
-	width: 30px;
-	margin: 0 8px 0 auto;
+.header .back {
+	width: 10px;
+	margin: 0 auto 0 10%;
+	cursor: pointer;
 }
 
-.header span, .header img {
-	margin-bottom: 20px;
+.header .map {
+	width: 30px;
+	margin: 0 10% 0 auto;
 }
+
 
 /* Store List */
 
@@ -126,22 +129,47 @@ body {
 .details  {
   width: 100vw;
   height: 100vh;
-  background-color: #FFE600;
+  background-color: #FFFFFF;
   position: fixed;
   left: 0;
   top: 0;
   transition: transform 1s;
-  z-index: 1000;
+  z-index: 2;
 }
  
 .hide {
-  transform: translate3d(100vw, 0, 0);
+  transform: translate3d(-100vw, 0, 0);
 }
 
 .show {
-  transform: translate3d(10vw, 0, 0);
+  transform: translate3d(0vw, 0, 0);
   overflow: hidden;
 }
+
+.gmap {
+	background-color: grey;
+	height: 180px;
+}
+
+.detail-title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #34B379;
+	height: 60px;
+	padding-left: 5%;
+}
+
+.detail-info {
+	display: flex;
+	height: 300px;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 5%;
+}
+
+
+/* Media Queries */
 
 @media(min-width: 801px) {
 	.storelist-view {

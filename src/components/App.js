@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import '../style.css';
 
-import Header from './Header';
+import Header from '../containers/Header';
 import StoreListView from '../containers/StoreListView';
 import Details from '../containers/Details';
 import Footer from './Footer';
