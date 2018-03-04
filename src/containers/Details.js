@@ -46,7 +46,7 @@ class Details extends Component {
 				)
 		}
 
-		return <div></div>
+		return <div className={visible}></div>
 	}
 }
 

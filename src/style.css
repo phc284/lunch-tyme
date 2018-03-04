@@ -133,8 +133,11 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  transition: transform 1s;
+  transition: transform 1s ease-in;
   z-index: 2;
+  -webkit-transition: transform 1s ease-in;
+  -moz-transition: transform 1s ease-in;
+  -o-transition: transform 1s ease-in;
 }
  
 .hide {
