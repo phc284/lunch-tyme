@@ -15,14 +15,16 @@ export class MapContainer extends Component {
       	google={this.props.google} 
       	zoom={14}
       	style={style}
-      	initialCenter={{
+      	center={{
       		lat: this.props.lat,
       		lng: this.props.lng
       	}}
       >
-
-        <Marker onClick={this.onMarkerClick}
-                name={'Current location'} />
+        <Marker 
+        	onClick={this.onMarkerClick}
+          name={'Current location'} 
+          position={{lat: this.props.lat, lng: this.props.lng}}
+        />
  
         <InfoWindow onClose={this.onInfoWindowClose}>
             <div>

@@ -21,6 +21,7 @@ class Header extends Component {
 		} else {
 			return (
 	      <div className="header">
+	      	<div></div>
 	      	<span>Lunch Tyme</span>
 	      	<img className="map" src={MapIcon} alt=""/>
 	      </div>
