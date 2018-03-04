@@ -111,6 +111,28 @@ body {
 	margin: 4px auto 2px auto;
 }
 
+/* Details */
+
+.details  {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFE600;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 1s;
+  z-index: 1000;
+}
+ 
+.hide {
+  transform: translate3d(100vw, 0, 0);
+}
+
+.show {
+  transform: translate3d(10vw, 0, 0);
+  overflow: hidden;
+}
+
 @media(min-width: 801px) {
 	.storelist-view {
 		grid-template-columns: 1fr 1fr;
